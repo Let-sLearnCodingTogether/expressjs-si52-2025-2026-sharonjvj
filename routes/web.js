@@ -9,7 +9,7 @@ web.get('/', (req, res) => {
 
 web.get('/:username', profileController.publicProfile)
 
-web.get('/nama/:username', namaController.publicNama) //otw remove - error
+
 
 
 export default web

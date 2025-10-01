@@ -3,6 +3,6 @@ export const publicProfile = (req,res) => {
     res.render('public-profile', {
         title : username,
         username : username,
-        bio : "Malam-malam Banyak Laron, Kenalin Aku Sharon"
+        bio : "Test 12345"
     })
 }
