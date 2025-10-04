@@ -1,5 +1,18 @@
-export const register = (req,res) => {
+import UserModel from "../models/userModel.js";
+
+export const register = async (req,res) => {
     try {
+        //untuk mengambil body atau data dari request
+        const registerData = req.body
+
+        console.log(registerData);
+
+        await UserModel.create({
+            username : registerData.username,
+            emai : registerData.email,
+            password : registerData.password
+        })
+
         res.status(201).json({
             message : "Berhasil register, silahkan login",
             data : null
