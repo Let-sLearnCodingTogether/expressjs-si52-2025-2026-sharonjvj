@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { syncIndexes } from "mongoose";
 
 export const database = async () => {
     try {
