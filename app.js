@@ -1,6 +1,6 @@
 import express from "express"
 import web from "./routes/web.js"
-import api from "./routes/API.js"
+import api from "./routes/api.js"
 import { database } from "./config/database.js"
 
 import passport from "passport"
